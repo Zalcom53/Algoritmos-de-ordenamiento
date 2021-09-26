@@ -4,7 +4,7 @@
   Fecha: septiembre del 2021
   Autor: Daniel Antonio Quihuis Hernandez
   Descripcion: Este archivo contiene el codigo fuente del programa
-  Version: 0.1.4
+  Version de archivo: 0.7.4
   Compilador: C++ 14
 */
 
@@ -25,9 +25,10 @@ int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de 
 
 using namespace std;
 
-run(){
+int userSelection; // Variable que nos servira para
+int a[10]; // Arreglo que va a contener los valores a ordenar
 
-    int userSelection;
+run(){
 
 
 }// Llave de cierre en la funcion run
@@ -35,17 +36,32 @@ run(){
 //---------------------------------------------------------------------------------
 void muestraMenu(){
 
-    do {
-        userSelection = CapturaEntero("Ingrese una opcion valida:");
-
-    } while(userSelection != 0);
+  do {
+    /* code */
+  } while(userSelection );
 
 
     switch (userSelection) {
-        case 0:
-            cout << "Salir[0]\n" << endl;
 
-            break;
+
+        case 1:
+        cout << "Selection sort\n" << endl;
+        break;
+
+        case 2:
+        cout << "Insertion sort\n" << endl;
+        break;
+
+        case 3:
+        cout << "Merge sort\n" << endl;
+
+        case 0:
+        cout << "Salir[0]\n" << endl;
+        break;
+
+
+
+
     }
 
 
@@ -76,5 +92,21 @@ int CapturaEntero(const char solicitud[]){
     }
 }//Llave de cierre en la funcion CapturaEntero
 //---------------------------------------------------------------------------------
+int generaArregloOrdenado(int n){
 
+
+}// Llave de cierre en la funcion generaArregloOrdenado
+//---------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------
+int generaArregloDesordenado(int n){
+
+
+}// Llave de cierre en la funcion generaArregloOrdenado
+//---------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------
+int generaArregloAleatorio(int n){
+
+
+}// Llave de cierre en la funcion generaArregloOrdenado
+//---------------------------------------------------------------------------------
 #endif //TAREA_1_UTILERIA_H
