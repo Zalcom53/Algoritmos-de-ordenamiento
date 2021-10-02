@@ -25,6 +25,10 @@ int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de 
 
 using namespace std;
 
+
+#define OPMIN 0 // Este valor corresponde al rango de opcion minima
+#define OPMAX 3 // Este valor corresponde al rango de opcion maxima
+
 int userSelection; // Variable que nos servira para
 int a[10]; // Arreglo que va a contener los valores a ordenar
 
@@ -36,40 +40,20 @@ run(){
 //---------------------------------------------------------------------------------
 void muestraMenu(){
 
-  do {
-    /* code */
-  } while(userSelection );
+  cout << "Seleccione una opcion valida.\n";
 
-
-    switch (userSelection) {
-
-
-        case 1:
-        cout << "Selection sort\n" << endl;
-        break;
-
-        case 2:
-        cout << "Insertion sort\n" << endl;
-        break;
-
-        case 3:
-        cout << "Merge sort\n" << endl;
-
-        case 0:
-        cout << "Salir[0]\n" << endl;
-        break;
-
-
-
-
-    }
-
+  cout << "Merge-Sort[1]" << endl;
+  cout << "Insertion-Sort[2]" << endl;
+  cout << "Selection-Sort[3]" << endl;
+  cout << "Salir [0]\n" << endl;
 
 
 }// Llave de cierre en la funcion muestraMenu
 //---------------------------------------------------------------------------------
 int CapturaEntero(const char solicitud[]){
-    int n;
+
+    int n; // Variable de uso local
+
     while(true){
         cout << solicitud;
         cin >> n;
@@ -86,26 +70,62 @@ int CapturaEntero(const char solicitud[]){
             continue;
         }
 
+        if(userSelection < OPMIN || userSelection > OPMAX){
 
+          
+
+        }//LLave de cierre en if
 
         return n;
     }
 }//Llave de cierre en la funcion CapturaEntero
+
+//---------------------------------------------------------------------------------
+void mergeSort(){
+
+cout << " Merge-Sort\n" << endl;
+
+
+
+}// Llave de cierre en la funcion mergeSort
+//---------------------------------------------------------------------------------
+
+void insertionSort(){
+
+  cout << "Insertion-Sort\n" << endl;
+
+
+
+
+}// Llave de cierre en insertionSort
+
+//---------------------------------------------------------------------------------
+void selectionSort(){
+
+
+cout << "Selection-Sort\n" << endl;
+
+
+}// Llave de cierre en la funcion selectionSort
+
 //---------------------------------------------------------------------------------
 int generaArregloOrdenado(int n){
 
+cout << "Generando arreglo ordenado espere un momento...\n" << endl;
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
 int generaArregloDesordenado(int n){
 
+cout << "Generando arreglo desordenado, espere un momento...\n" << endl;
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
 int generaArregloAleatorio(int n){
 
+cout << "Generando arreglo de forma aleatoria, espere un momento...\n" << endl;
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
