@@ -28,11 +28,15 @@ using namespace std;
 
 #define OPMIN 0 // Este valor corresponde al rango de opcion minima
 #define OPMAX 3 // Este valor corresponde al rango de opcion maxima
+#define ARRTAM 10 // Tamaño maximo de elementos en el vector
 
 int userSelection; // Variable que nos servira para
-int a[10]; // Arreglo que va a contener los valores a ordenar
+int a[ARRTAM]; // Arreglo que va a contener los valores a ordenar
 
 run(){
+
+  muestraMenu();
+
 
 
 }// Llave de cierre en la funcion run
@@ -46,6 +50,8 @@ void muestraMenu(){
   cout << "Insertion-Sort[2]" << endl;
   cout << "Selection-Sort[3]" << endl;
   cout << "Salir [0]\n" << endl;
+
+  userSelection = CapturaEntero("Ingrese una opcion valida");
 
 
 }// Llave de cierre en la funcion muestraMenu
@@ -72,7 +78,7 @@ int CapturaEntero(const char solicitud[]){
 
         if(userSelection < OPMIN || userSelection > OPMAX){
 
-          
+
 
         }//LLave de cierre en if
 
@@ -109,23 +115,37 @@ cout << "Selection-Sort\n" << endl;
 }// Llave de cierre en la funcion selectionSort
 
 //---------------------------------------------------------------------------------
-int generaArregloOrdenado(int n){
+int generaArregloOrdenado(int a[]){
 
 cout << "Generando arreglo ordenado espere un momento...\n" << endl;
 
+for (int i = 0; i < ARRTAM -1 ; i++) {
+  a[i] = i;
+}// Llave de cierre en el ciclo for
+
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
-int generaArregloDesordenado(int n){
+int generaArregloDesordenado(int a[]){
 
 cout << "Generando arreglo desordenado, espere un momento...\n" << endl;
 
+for (int i = 0; i < ARRTAM -1 ; i++) {
+  a[i] = i;
+}// Llave de cierre en el ciclo for
+
+
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
-int generaArregloAleatorio(int n){
+int generaArregloAleatorio(int a[]){
 
 cout << "Generando arreglo de forma aleatoria, espere un momento...\n" << endl;
+
+for (int i = 0; i < ARRTAM -1 ; i++) {
+  a[i] = i;
+}// Llave de cierre en el ciclo for
+
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
