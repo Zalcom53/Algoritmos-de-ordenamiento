@@ -22,6 +22,9 @@ int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de 
 
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
+// AGREGAR UN ARCHIVO CPP PARA LA PROGRAMACION Y OTRO H PARA LA IMPLEMENTACION
+
 
 using namespace std;
 
@@ -36,7 +39,7 @@ int a[ARRTAM]; // Arreglo que va a contener los valores a ordenar
 run(){
 
   muestraMenu();
-  
+
   switch (userSelection) {
 
     case 1:
@@ -150,7 +153,7 @@ void generaArregloDesordenado(int a[]){
 cout << "Generando arreglo desordenado, espere un momento...\n" << endl;
 
 for (int i = 0; i < ARRTAM -1 ; i++) {
-  a[i] = i;
+  a[i] = ;
 }// Llave de cierre en el ciclo for
 
 cout << "Se genero el arreglo desordenado de forma exitosa.\n" << endl;
@@ -172,4 +175,17 @@ cout << "Se genero el arreglo de forma aleatoria con exito.\n" << endl;
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
+void imprimeArreglo(int a[]){
+
+  cout << "Imprimiendo arreglo espere un momento...\n" << endl;
+
+  for (int i = 0; i < ARRTAM -1; i++) {
+
+    cout << a[i];
+  }
+
+
+}// LLave de cierre en la funcion imprimeArreglo
+//---------------------------------------------------------------------------------
+
 #endif //TAREA_1_UTILERIA_H
