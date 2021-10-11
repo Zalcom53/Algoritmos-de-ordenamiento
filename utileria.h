@@ -173,7 +173,7 @@ cout << "Generando arreglo de forma aleatoria, espere un momento...\n" << endl;
 cout << "Los valores se generaran de 0 a 10\n" << endl;
 
 for (int i = 0; i < ARRTAM -1 ; i++) {
-  a[i] = i;
+  a[i] = 0 + rand() % 10;
 }// Llave de cierre en el ciclo for
 
 cout << "Se genero el arreglo de forma aleatoria con exito.\n" << endl;
@@ -188,7 +188,7 @@ void imprimeArreglo(int a[]){
 
   for (int i = 0; i < ARRTAM -1; i++) {
 
-    cout << a[i];
+    cout << a[i] << " ";
   }
 
 
