@@ -135,6 +135,9 @@ void generaArregloOrdenado(int a[]){
 
 cout << "Generando arreglo ordenado espere un momento...\n" << endl;
 
+cout << "Los valores se generaran de 0 a 10\n" << endl;
+
+
 for (int i = 0; i < ARRTAM -1 ; i++) {
   a[i] = i;
 }// Llave de cierre en el ciclo for
@@ -150,6 +153,9 @@ void generaArregloDesordenado(int a[]){
 
 cout << "Generando arreglo desordenado, espere un momento...\n" << endl;
 
+cout << "Los valores se generaran de 0 a 10\n" << endl;
+
+
 for (int i = 0; i < ARRTAM -1 ; i++) {
   a[i] = ;
 }// Llave de cierre en el ciclo for
@@ -164,6 +170,8 @@ void generaArregloAleatorio(int a[]){
 
 cout << "Generando arreglo de forma aleatoria, espere un momento...\n" << endl;
 
+cout << "Los valores se generaran de 0 a 10\n" << endl;
+
 for (int i = 0; i < ARRTAM -1 ; i++) {
   a[i] = i;
 }// Llave de cierre en el ciclo for
@@ -176,6 +184,7 @@ cout << "Se genero el arreglo de forma aleatoria con exito.\n" << endl;
 void imprimeArreglo(int a[]){
 
   cout << "Imprimiendo arreglo espere un momento...\n" << endl;
+
 
   for (int i = 0; i < ARRTAM -1; i++) {
 
