@@ -23,8 +23,6 @@ int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-// AGREGAR UN ARCHIVO CPP PARA LA PROGRAMACION Y OTRO H PARA LA IMPLEMENTACION
-
 
 using namespace std;
 
