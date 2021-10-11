@@ -157,7 +157,7 @@ cout << "Los valores se generaran de 0 a 10\n" << endl;
 
 
 for (int i = 0; i < ARRTAM -1 ; i++) {
-  a[i] = ;
+  a[i] -= 10;
 }// Llave de cierre en el ciclo for
 
 cout << "Se genero el arreglo desordenado de forma exitosa.\n" << endl;
