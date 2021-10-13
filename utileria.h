@@ -42,6 +42,20 @@ void run(){
 
   muestraMenu();
 
+  cout << " Merge-Sort\n" << endl;
+
+  cout << "Arreglo ordenado\n" << endl;
+  generaArregloOrdenado(int a[]);
+  imprimeArreglo(int a[]);
+
+  cout << "Arreglo desordenado\n" << endl;
+  generaArregloDesordenado(int a[]);
+  imprimeArreglo(int a[]);
+
+  cout << "Arreglo con valores aleatorios" << endl;
+  generaArregloAleatorio(int a[]);
+  imprimeArreglo(int a[]);
+
   switch (userSelection) {
 
     case 1:
@@ -65,14 +79,14 @@ void run(){
 //---------------------------------------------------------------------------------
 void muestraMenu(){
 
-  cout << "Seleccione una opcion valida.\n";
+  cout << "\nSeleccione una opcion valida.\n";
 
   cout << "Merge-Sort[1]" << endl;
   cout << "Insertion-Sort[2]" << endl;
   cout << "Selection-Sort[3]" << endl;
   cout << "Salir [0]\n" << endl;
 
-  userSelection = CapturaEntero("Ingrese una opcion valida");
+  userSelection = CapturaEntero("Ingrese una opcion valida ");
 
 
 }// Llave de cierre en la funcion muestraMenu
@@ -86,12 +100,12 @@ int CapturaEntero(const char solicitud[]){
         cin >> n;
 
         if(cin.bad()){
-            cout << "Ocurri\242 un error irrecuperable en el flujo de entrada" << endl;
+            cout << "Ocurrio un error irrecuperable en el flujo de entrada" << endl;
             exit(EXIT_FAILURE);
             return 1;
         }
         if(cin.fail()){
-            cout << "Error: no es un n\243mero. Introduzca de nuevo..." << endl;
+            cout << "Error: no es un numero. Introduzca de nuevo..." << endl;
             cin.clear();
             cin.ignore(numeric_limits<int>::max(), '\n');
             continue;
@@ -101,6 +115,7 @@ int CapturaEntero(const char solicitud[]){
 
           cout << "Opcion fuera de rango\n" << endl;
 
+          userSelection = CapturaEntero("Ingrese una opcion valida");
 
         }//LLave de cierre en if
 
@@ -110,10 +125,6 @@ int CapturaEntero(const char solicitud[]){
 
 //---------------------------------------------------------------------------------
 void mergeSort(){
-
-cout << " Merge-Sort\n" << endl;
-
-
 
 
 }// Llave de cierre en la funcion mergeSort
