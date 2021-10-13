@@ -4,7 +4,6 @@
   Fecha: septiembre del 2021
   Autor: Daniel Antonio Quihuis Hernandez
   Descripcion: Este archivo contiene el codigo fuente del programa
-  Version de archivo: 0.7.4
   Compilador: C++ 14
 */
 
@@ -13,11 +12,16 @@
 
 //---------------------------------------------------------------------------------
 //BLOQUE PARA DECLARAR FUNCIONES
-void muestraMenu(); // Esta funcion no recibe parametros de entrada ni arroja salidas
-int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de caracteres y arroja un numero entero como salida
+void run(); // Esta funcion no recibe parametros, se encarga de ejecutar el codfigo.
+void muestraMenu(); // Esta funcion no recibe parametros de entrada ni arroja salidas.
+int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de caracteres y arroja un numero entero como salida.
+void mergeSort(); // Esta funcion recibe un arreglo de enteros.
+void insertionSort(); // Esta funcion recibe un arreglo de enteros.
+void selectionSort(); // Esta funcion recibe un arreglo de enteros.
+int generaArregloOrdenado(); // Esta funcion recibe un arreglo de enteros.
+int generaArregloDesordenado(); // Esta funcion recibe un arreglo de enteros.
+int generaArregloAleatorio(); // Esta funcion recibe un arreglo de enteros.
 //---------------------------------------------------------------------------------
-
-
 
 
 #include <iostream>
@@ -34,7 +38,7 @@ using namespace std;
 int userSelection; // Variable que nos servira para
 int a[ARRTAM]; // Arreglo que va a contener los valores a ordenar
 
-run(){
+void run(){
 
   muestraMenu();
 
@@ -95,7 +99,7 @@ int CapturaEntero(const char solicitud[]){
 
         if(userSelection < OPMIN || userSelection > OPMAX){
 
-          cout << "Opcion fuera de rango\n" << emdl;
+          cout << "Opcion fuera de rango\n" << endl;
 
 
         }//LLave de cierre en if
@@ -108,6 +112,7 @@ int CapturaEntero(const char solicitud[]){
 void mergeSort(){
 
 cout << " Merge-Sort\n" << endl;
+
 
 
 
@@ -144,7 +149,6 @@ for (int i = 0; i < ARRTAM -1 ; i++) {
 
 cout << "Se genero el arreglo ordenado de forma exitosa.\n" << endl;
 
-return a
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------

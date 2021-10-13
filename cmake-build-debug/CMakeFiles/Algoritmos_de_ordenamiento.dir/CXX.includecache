@@ -7,6 +7,14 @@
 #IncludeRegexTransform: 
 
 /Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/main.cpp
+utileria.h
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/utileria.h
+
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/utileria.h
 iostream
+-
+cstdlib
+-
+ctime
 -
 
