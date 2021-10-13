@@ -18,9 +18,10 @@ int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de 
 void mergeSort(int a[], int b[], int c[]); // Esta funcion recibe tres arreglos de enteros.
 void insertionSort(int a[], int b[], int c[]); // Esta funcion recibe tres arreglos de enteros.
 void selectionSort(int a[], int b[], int c[]); // Esta funcion recibe tres arreglos de enteros.
-void generaArregloOrdenado(); // Esta funcion recibe un arreglo de enteros.
-void generaArregloDesordenado(); // Esta funcion recibe un arreglo de enteros.
-void generaArregloAleatorio(); // Esta funcion recibe un arreglo de enteros.
+void generaArregloOrdenado(int a[]); // Esta funcion recibe un arreglo de enteros.
+void generaArregloDesordenado(int b[]); // Esta funcion recibe un arreglo de enteros.
+void generaArregloAleatorio(int c[]);// Esta funcion recibe un arreglo de enteros.
+void imprimeArreglo(int []); // Esta funcion se encarga de imprimir los valores del arreglo
 //---------------------------------------------------------------------------------
 
 
@@ -45,32 +46,35 @@ void run(){
 
   muestraMenu();
 
-  generaArregloOrdenado(int a[]);
-  generaArregloDesordenado(int b[]);
-  generaArregloAleatorio(int c[]);
+  generaArregloOrdenado(a);
+  generaArregloDesordenado(b);
+  generaArregloAleatorio(c);
 
-  cout << "Arreglo ordenado\n" < endl;
-  imprimeArreglo(int a[]);
+  cout << "Arreglo ordenado\n" << endl;
+  imprimeArreglo(a);
+  cout << "\n";
 
-  cout << "Arreglo desordenado\n" < endl;
-  imprimeArreglo(int b[]);
+  cout << "\nArreglo desordenado\n" << endl;
+  imprimeArreglo(b);
+  cout << "\n";
 
-  cout << "Arreglo aleatorio\n" < endl;
-  imprimeArreglo(int a[]);
+  cout << "\nArreglo aleatorio\n" << endl;
+  imprimeArreglo(c);
+
 
 
   switch (userSelection) {
 
     case 1:
-    mergeSort(int a[], int b[], int c[]);
+    mergeSort(a,b,c);
     break;
 
     case 2:
-    insertionSort(int a[], int b[], int c[]);
+    insertionSort(a,b,c);
     break;
 
     case 3:
-    selectionSort(int a[], int b[], int c[]);
+    selectionSort(a,b,c);
     break;
 
   }
@@ -82,14 +86,15 @@ void run(){
 //---------------------------------------------------------------------------------
 void muestraMenu(){
 
-  cout << "\nSeleccione una opcion valida.\n";
+  cout << "\nLos valores se generaran de 0 a 100" << endl;
+  cout << "Seleccione una opcion valida.\n" << endl;
 
   cout << "Merge-Sort[1]" << endl;
   cout << "Insertion-Sort[2]" << endl;
   cout << "Selection-Sort[3]" << endl;
   cout << "Salir [0]\n" << endl;
-
-  userSelection = CapturaEntero("Ingrese una opcion valida ");
+  userSelection = CapturaEntero("Ingrese una opcion valida: ");
+  cout << "\n" << endl;
 
 
 }// Llave de cierre en la funcion muestraMenu
@@ -129,24 +134,29 @@ int CapturaEntero(const char solicitud[]){
 
 //---------------------------------------------------------------------------------
 void mergeSort(int a[], int b[], int c[]){
-  cout < "Merge-Sort\n" << endl;
 
+  cout << "Merge-Sort\n" << endl;
+
+  cout << "\n------------------------------------------------------------------------\n";
   cout << "Mejor caso\n" << endl;
   cout << "Ordenando espere un momento...\n" << endl;
 
   cout << "El arreglo se ordeno con exito\n" << endl;
-
+  cout << "\n------------------------------------------------------------------------\n";
 
   cout << "Peor caso\n" << endl;
   cout << "Ordenando espere un momento...\n" << endl;
 
   cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
 
 
   cout << "Caso proemdio\n" << endl;
   cout << "Ordenando espere un momento...\n" << endl;
 
   cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
+
 
 
 
@@ -154,23 +164,29 @@ void mergeSort(int a[], int b[], int c[]){
 //---------------------------------------------------------------------------------
 
 void insertionSort(int a[], int b[], int c[]){
+
   cout << "Insertion-Sort\n" << endl;
 
-cout << "Mejor caso\n" << endl;
-cout << "Ordenando espere un momento...\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
+  cout << "Mejor caso\n" << endl;
+  cout << "Ordenando espere un momento...\n" << endl;
 
-cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
 
-cout << "Pero caso\n" << endl;
-cout << "Ordenando espere un momento...\n" << endl;
+  cout << "Peor caso\n" << endl;
+  cout << "Ordenando espere un momento...\n" << endl;
 
-cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
 
 
-cout << "Caso proemdio\n" << endl;
-cout << "Ordenando espere un momento...\n" << endl;
+  cout << "Caso proemdio\n" << endl;
+  cout << "Ordenando espere un momento...\n" << endl;
 
-cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
+
 
 
 
@@ -178,23 +194,31 @@ cout << "El arreglo se ordeno con exito\n" << endl;
 
 //---------------------------------------------------------------------------------
 void selectionSort(int a[], int b[], int c[]){
+
   cout << "Selection-Sort\n" << endl;
 
 
-cout << "Mejor caso\n" << endl;
-cout << "Ordenando espere un momento...\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
+  cout << "Mejor caso\n" << endl;
+  cout << "Ordenando espere un momento...\n" << endl;
 
-cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
 
-cout << "Pero caso\n" << endl;
-cout << "Ordenando espere un momento...\n" << endl;
 
-cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "Peor caso\n" << endl;
+  cout << "Ordenando espere un momento...\n" << endl;
 
-cout << "Caso proemdio\n" << endl;
-cout << "Ordenando espere un momento...\n" << endl;
+  cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
 
-cout << "El arreglo se ordeno con exito\n" << endl;
+
+  cout << "Caso proemdio\n" << endl;
+  cout << "Ordenando espere un momento...\n" << endl;
+
+  cout << "El arreglo se ordeno con exito\n" << endl;
+  cout << "\n------------------------------------------------------------------------\n";
+
 
 
 }// Llave de cierre en la funcion selectionSort
@@ -202,30 +226,25 @@ cout << "El arreglo se ordeno con exito\n" << endl;
 //---------------------------------------------------------------------------------
 void generaArregloOrdenado(int a[]){
 
-cout << "Generando arreglo ordenado espere un momento...\n" << endl;
-
-cout << "Los valores se generaran de 0 a 10\n" << endl;
+cout << "Generando arreglo ordenado espere un momento..." << endl;
 
 
 for (int i = 0; i < ARRTAM -1 ; i++) {
-  a[i] = i;
+    a[i] = ARRTAM + 1;
 }// Llave de cierre en el ciclo for
-
 cout << "Se genero el arreglo ordenado de forma exitosa.\n" << endl;
 
 
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
-void generaArregloDesordenado(int a[]){
+void generaArregloDesordenado(int b[]){
 
-cout << "Generando arreglo desordenado, espere un momento...\n" << endl;
-
-cout << "Los valores se generaran de 0 a 10\n" << endl;
+cout << "Generando arreglo desordenado, espere un momento..." << endl;
 
 
 for (int i = 0; i < ARRTAM -1 ; i++) {
-  a[i] -= 10;
+  a[i] = 1 + rand() % 100 - 3;
 }// Llave de cierre en el ciclo for
 
 cout << "Se genero el arreglo desordenado de forma exitosa.\n" << endl;
@@ -234,14 +253,12 @@ cout << "Se genero el arreglo desordenado de forma exitosa.\n" << endl;
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------
-void generaArregloAleatorio(int a[]){
+void generaArregloAleatorio(int c[]){
 
-cout << "Generando arreglo de forma aleatoria, espere un momento...\n" << endl;
-
-cout << "Los valores se generaran de 0 a 10\n" << endl;
+cout << "Generando arreglo de forma aleatoria, espere un momento..." << endl;
 
 for (int i = 0; i < ARRTAM -1 ; i++) {
-  a[i] = 0 + rand() % 10;
+  a[i] = 1 + rand() % 100;
 }// Llave de cierre en el ciclo for
 
 cout << "Se genero el arreglo de forma aleatoria con exito.\n" << endl;
@@ -258,6 +275,7 @@ void imprimeArreglo(int a[]){
 
     cout << a[i] << " ";
   }// Llave de cierre en el ciclo for
+  cout << "\n------------------------------------------------------------------------\n";
 
 
 }// LLave de cierre en la funcion imprimeArreglo
