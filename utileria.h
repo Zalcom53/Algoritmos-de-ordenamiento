@@ -13,8 +13,8 @@
 //---------------------------------------------------------------------------------
 //BLOQUE PARA DECLARAR FUNCIONES
 void run(); // Esta funcion no recibe parametros, se encarga de ejecutar el codfigo.
-void muestraMenu(); // Esta funcion no recibe parametros de entrada ni arroja salidas.
-int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de caracteres y arroja un numero entero como salida.
+// void muestraMenu(); // Esta funcion no recibe parametros de entrada ni arroja salidas.
+// int CapturaEntero(const char solicitud[]); // Esta funcion recibe una cadena de caracteres y arroja un numero entero como salida.
 void mergeSort(int a[], int b[], int c[]); // Esta funcion recibe tres arreglos de enteros.
 void insertionSort(int a[], int b[], int c[]); // Esta funcion recibe tres arreglos de enteros.
 void selectionSort(int a[], int b[], int c[]); // Esta funcion recibe tres arreglos de enteros.
@@ -44,93 +44,93 @@ int c[ARRTAM]; // Arreglo que va a contener los valores de forma aleatoria(caso 
 
 void run(){
 
-  muestraMenu();
+  // muestraMenu();
 
   generaArregloOrdenado(a);
   generaArregloDesordenado(b);
   generaArregloAleatorio(c);
 
-  cout << "Arreglo ordenado\n" << endl;
-  imprimeArreglo(a);
-  cout << "\n";
+  // cout << "Arreglo ordenado\n" << endl;
+  // imprimeArreglo(a);
+  // cout << "\n";
+  //
+  // cout << "\nArreglo desordenado\n" << endl;
+  // imprimeArreglo(b);
+  // cout << "\n";
+  //
+  // cout << "\nArreglo aleatorio\n" << endl;
+  // imprimeArreglo(c);
 
-  cout << "\nArreglo desordenado\n" << endl;
-  imprimeArreglo(b);
-  cout << "\n";
-
-  cout << "\nArreglo aleatorio\n" << endl;
-  imprimeArreglo(c);
 
 
-
-  switch (userSelection) {
-
-    case 1:
-    mergeSort(a,b,c);
-    break;
-
-    case 2:
-    insertionSort(a,b,c);
-    break;
-
-    case 3:
-    selectionSort(a,b,c);
-    break;
-
-  }
+  // switch (userSelection) {
+  //
+  //   case 1:
+  //   mergeSort(a,b,c);
+  //   break;
+  //
+  //   case 2:
+  //   insertionSort(a,b,c);
+  //   break;
+  //
+  //   case 3:
+  //   selectionSort(a,b,c);
+  //   break;
+  //
+  // }
 
 
 
 }// Llave de cierre en la funcion run
 
 //---------------------------------------------------------------------------------
-void muestraMenu(){
-
-  cout << "\nLos valores se generaran de 0 a 100" << endl;
-  cout << "Seleccione una opcion valida.\n" << endl;
-
-  cout << "Merge-Sort[1]" << endl;
-  cout << "Insertion-Sort[2]" << endl;
-  cout << "Selection-Sort[3]" << endl;
-  cout << "Salir [0]\n" << endl;
-  userSelection = CapturaEntero("Ingrese una opcion valida: ");
-  cout << "\n" << endl;
-
-
-}// Llave de cierre en la funcion muestraMenu
+// void muestraMenu(){
+//
+//   cout << "\nLos valores se generaran de 0 a 100" << endl;
+//   cout << "Seleccione una opcion valida.\n" << endl;
+//
+//   cout << "Merge-Sort[1]" << endl;
+//   cout << "Insertion-Sort[2]" << endl;
+//   cout << "Selection-Sort[3]" << endl;
+//   cout << "Salir [0]\n" << endl;
+//   userSelection = CapturaEntero("Ingrese una opcion valida: ");
+//   cout << "\n" << endl;
+//
+//
+// }// Llave de cierre en la funcion muestraMenu
 //---------------------------------------------------------------------------------
-int CapturaEntero(const char solicitud[]){
-
-    int n; // Variable de uso local
-
-    while(true){
-        cout << solicitud;
-        cin >> n;
-
-        if(cin.bad()){
-            cout << "Ocurrio un error irrecuperable en el flujo de entrada" << endl;
-            exit(EXIT_FAILURE);
-            return 1;
-        }
-        if(cin.fail()){
-            cout << "Error: no es un numero. Introduzca de nuevo..." << endl;
-            cin.clear();
-            cin.ignore(numeric_limits<int>::max(), '\n');
-            continue;
-        }
-
-        // if(userSelection < OPMIN || userSelection > OPMAX){
-        //
-        //   cout << "Error: Opcion fuera de rango\n" << endl;
-        //   cout << "Intente con una opcion valida\n" << endl;
-        //
-        //   userSelection = CapturaEntero("Ingrese una opcion valida");
-        //
-        // }//LLave de cierre en if
-
-        return n;
-    }
-}//Llave de cierre en la funcion CapturaEntero
+// int CapturaEntero(const char solicitud[]){
+//
+//     int n; // Variable de uso local
+//
+//     while(true){
+//         cout << solicitud;
+//         cin >> n;
+//
+//         if(cin.bad()){
+//             cout << "Ocurrio un error irrecuperable en el flujo de entrada" << endl;
+//             exit(EXIT_FAILURE);
+//             return 1;
+//         }
+//         if(cin.fail()){
+//             cout << "Error: no es un numero. Introduzca de nuevo..." << endl;
+//             cin.clear();
+//             cin.ignore(numeric_limits<int>::max(), '\n');
+//             continue;
+//         }
+//
+//         // if(userSelection < OPMIN || userSelection > OPMAX){
+//         //
+//         //   cout << "Error: Opcion fuera de rango\n" << endl;
+//         //   cout << "Intente con una opcion valida\n" << endl;
+//         //
+//         //   userSelection = CapturaEntero("Ingrese una opcion valida");
+//         //
+//         // }//LLave de cierre en if
+//
+//         return n;
+//     }
+// }//Llave de cierre en la funcion CapturaEntero
 
 //---------------------------------------------------------------------------------
 void mergeSort(int a[], int b[], int c[]){
