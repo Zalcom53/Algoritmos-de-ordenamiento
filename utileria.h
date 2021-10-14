@@ -35,7 +35,7 @@ int c[arrtam]; // Arreglo que va a contener los valores de forma aleatoria(caso 
 float tiempo = 0.0; // Variable que se utiliza para medir el tiempo de ejecucion
 
 
-void run()
+void run(){
 
   generaArregloAleatorio(c);
 
@@ -171,6 +171,7 @@ void imprimeArreglo(int a[]){
   for (int i = 0; i < arrtam -1; i++) {
 
     cout << a[i] << " ";
+    cout << endl;
   }// Llave de cierre en el ciclo for
   cout << "\n------------------------------------------------------------------------\n";
 
