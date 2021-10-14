@@ -26,7 +26,7 @@ void imprimeArreglo(int []); // Esta funcion se encarga de imprimir los valores 
 
 using namespace std;
 
-//DATOS DE USO GLOBAL 
+//DATOS DE USO GLOBAL
 int userSelection; // Variable que nos servira para
 int arrtam = 10; // Esta variable corresponde al tamanio del arreglo
 int a[arrtam] = {1,2,4,5,6,7,8,9,10}; // Arreglo que va a contener los valores a ordenar en el mejor caso(los valores estan ordenados)
@@ -40,11 +40,11 @@ void run()
   generaArregloAleatorio(c);
 
   //MERGESORT
-  cout << "Merge-Sort\n" << endl;
+  cout << "Mergesort\n" << endl;
   cout << "\nMejor caso - Arreglo ordenado\n" << endl;
   cout << "Arreglo antes de ordenar" << endl;
   imprimeArreglo(a);
-  mergeSort(a, tiepo);
+  mergeSort(a, tiempo);
   cout << "Arreglo despues de ordenar" << endl;
   imprimeArreglo(a);
   cout << "Tiempo de ejecucion para el mejor caso" << tiempo << endl;
@@ -69,7 +69,7 @@ void run()
   cout << "\n" << endl
 
   // INSERTONSORT
-  cout << "Insertion-Sort\n" << endl;
+  cout << "Insertionsort\n" << endl;
   cout << "\nMejor caso - Arreglo ordenado\n" << endl;
   cout << "Arreglo antes de ordenar" << endl;
   imprimeArreglo(a);
@@ -98,7 +98,7 @@ void run()
   cout << "\n" << endl
 
   //SELECTIONSORT
-  cout << "Selection-Sort\n" << endl;
+  cout << "Selectionsort\n" << endl;
   cout << "Arreglo antes de ordenar" << endl;
   imprimeArreglo(a);
   selectionSort(a, tiempo);
@@ -130,6 +130,7 @@ void run()
 
 //---------------------------------------------------------------------------------
 float mergeSort(int [], tiempo){
+
 
 return tiempo;
 
