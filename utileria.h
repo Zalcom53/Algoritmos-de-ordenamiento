@@ -26,6 +26,7 @@ void imprimeArreglo(int []); // Esta funcion se encarga de imprimir los valores 
 
 using namespace std;
 
+//DATOS DE USO GLOBAL 
 int userSelection; // Variable que nos servira para
 int arrtam = 10; // Esta variable corresponde al tamanio del arreglo
 int a[arrtam] = {1,2,4,5,6,7,8,9,10}; // Arreglo que va a contener los valores a ordenar en el mejor caso(los valores estan ordenados)
