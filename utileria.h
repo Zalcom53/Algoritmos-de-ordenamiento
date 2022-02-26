@@ -1,7 +1,7 @@
 
 /*
   Nombre: utileria.h
-  Fecha: septiembre del 2021
+  Fecha: febreri del 2022
   Autor: Daniel Antonio Quihuis Hernandez
   Descripcion: Este archivo contiene el codigo fuente del programa
 */
