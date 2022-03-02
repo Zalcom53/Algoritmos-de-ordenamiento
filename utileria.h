@@ -17,6 +17,7 @@ float insertionSort(int [], float); // Esta funcion recibe tres arreglos de ente
 float selectionSort(int [], float); // Esta funcion recibe tres arreglos de enteros.
 void generaArregloAleatorio(int []);// Esta funcion recibe un arreglo de enteros.
 void imprimeArreglo(int []); // Esta funcion se encarga de imprimir los valores del arreglo
+int CapturaSegura(const char solicitud[]); // Esta funcion captura un numero entero de forma segura
 //---------------------------------------------------------------------------------
 
 
@@ -179,7 +180,7 @@ for (int i = 0; i < 10 -1 ; i++) {
 }// Llave de cierre en el ciclo for
 
 
-}// Llave de cierre en la funcion generaArregloOrdenado
+}// Llave de cierre en la funcion generaArregloAleatorio
 //---------------------------------------------------------------------------------
 void imprimeArreglo(int []){
 
@@ -192,5 +193,36 @@ void imprimeArreglo(int []){
 
 }// LLave de cierre en la funcion imprimeArreglo
 //---------------------------------------------------------------------------------
+int CapturaSegura(const char solicitud[]){
 
+     int n; // Variable de uso local
+
+     while(true){
+         cout << solicitud;
+        cin >> n;
+         if(cin.bad()){
+            cout << "Ocurrio un error irrecuperable en el flujo de entrada" << endl;
+            exit(EXIT_FAILURE);
+             return 1;
+         }
+         if(cin.fail()){
+            cout << "Error: no es un numero. Introduzca de nuevo..." << endl;
+            cin.clear();
+             cin.ignore(numeric_limits<int>::max(), '\n');
+             continue;
+        }
+// Aqui hay que hacer que se quede si que se cicle
+         // if(userSelection < OPMIN || userSelection > OPMAX){
+         //
+//         //   cout << "Error: Opcion fuera de rango\n" << endl;
+//         //   cout << "Intente con una opcion valida\n" << endl;
+//         //
+//         //   userSelection = CapturaEntero("Ingrese una opcion valida");
+//         //
+//         // }//LLave de cierre en if
+//
+//         return n;
+//     }
+// }//Llave de cierre en la funcion CapturaEntero
+//---------------------------------------------------------------------------------
 #endif //TAREA_1_UTILERIA_H
