@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/main.cpp" "/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/CMakeFiles/Algoritmos_de_ordenamiento.dir/main.cpp.o"
+  "/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/main.cpp" "/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/CMakeFiles/Algoritmos_de_ordenamiento.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

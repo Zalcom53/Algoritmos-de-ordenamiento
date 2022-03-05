@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/main.cpp
-utileria.h
-/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/utileria.h
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/main.cpp
+utileria.cpp
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/utileria.cpp
 
-/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/utileria.h
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/utileria.cpp
+utileria.h
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/utileria.h
+
+/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/utileria.h
 iostream
 -
 cstdlib

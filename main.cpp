@@ -5,7 +5,7 @@
   Descripcion: Este archivo contiene la implementacion del archivo utileria.h
 */
 
-#include "utileria.h"
+#include "utileria.cpp"
 
 int main(){
 
