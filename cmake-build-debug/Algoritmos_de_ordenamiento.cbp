@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug"/>
+				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug"/>
+				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug"/>
+				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Algoritmos_de_ordenamiento">
-				<Option output="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Algoritmos_de_ordenamiento" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug"/>
+				<Option output="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Algoritmos_de_ordenamiento" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algoritmos_de_ordenamiento"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algoritmos_de_ordenamiento"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Algoritmos_de_ordenamiento/fast">
-				<Option output="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Algoritmos_de_ordenamiento" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug"/>
+				<Option output="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Algoritmos_de_ordenamiento" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,20 +73,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algoritmos_de_ordenamiento/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algoritmos_de_ordenamiento/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/main.cpp">
+		<Unit filename="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/main.cpp">
 			<Option target="Algoritmos_de_ordenamiento"/>
 		</Unit>
-		<Unit filename="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/utileria.h">
+		<Unit filename="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/utileria.h">
 			<Option target="Algoritmos_de_ordenamiento"/>
 		</Unit>
-		<Unit filename="/Users/antonioquihuis/Documents/GitHub/Algoritmos-de-ordenamiento/CMakeLists.txt">
+		<Unit filename="/Users/antonioquihuis/Documents/GitHub/Algoritmos-De-Ordenamiento/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

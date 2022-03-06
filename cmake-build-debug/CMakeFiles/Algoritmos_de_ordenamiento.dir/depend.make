@@ -3,4 +3,5 @@
 
 CMakeFiles/Algoritmos_de_ordenamiento.dir/main.cpp.o: \
  ../main.cpp \
+ ../utileria.cpp \
  ../utileria.h
