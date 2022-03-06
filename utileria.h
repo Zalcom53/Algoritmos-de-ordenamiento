@@ -211,7 +211,7 @@ int CapturaSegura(const char solicitud[]){
              cin.ignore(numeric_limits<int>::max(), '\n');
              continue;
         }
-// Aqui hay que hacer que se quede si que se cicle
+
          // if(userSelection < OPMIN || userSelection > OPMAX){
          //
 //         //   cout << "Error: Opcion fuera de rango\n" << endl;
@@ -222,7 +222,7 @@ int CapturaSegura(const char solicitud[]){
 //         // }//LLave de cierre en if
 //
 //         return n;
-//     }
-// }//Llave de cierre en la funcion CapturaEntero
+     }
+ }//Llave de cierre en la funcion CapturaEntero
 //---------------------------------------------------------------------------------
 #endif //TAREA_1_UTILERIA_H
