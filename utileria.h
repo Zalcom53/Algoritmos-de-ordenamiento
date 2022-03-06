@@ -1,7 +1,7 @@
 
 /*
   Nombre: utileria.h
-  Fecha: febreri del 2022
+  Fecha: febrero del 2022
   Autor: Daniel Antonio Quihuis Hernandez
   Descripcion: Este archivo contiene el codigo fuente del programa
 */
@@ -19,7 +19,6 @@ void generaArregloAleatorio(int []);// Esta funcion recibe un arreglo de enteros
 void imprimeArreglo(int []); // Esta funcion se encarga de imprimir los valores del arreglo
 int CapturaSegura(const char solicitud[]); // Esta funcion captura un numero entero de forma segura
 //---------------------------------------------------------------------------------
-
 
 #include <iostream>
 #include <cstdlib>
