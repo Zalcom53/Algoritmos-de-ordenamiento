@@ -2,7 +2,7 @@
   Nombre: utileria.cpp
   Fecha: Marzo del 2022
   Autor: Daniel Antonio Qui
-  Descripcion
+  Descripcion: Este archivo contiene la implementacion de utileria.h 
 */
 
 #include "utileria.h"
