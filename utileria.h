@@ -18,7 +18,7 @@ float selectionSort(int [], float); // Esta funcion recibe tres arreglos de ente
 void generaArregloAleatorio(int []);// Esta funcion recibe un arreglo de enteros.
 void imprimeArreglo(int []); // Esta funcion se encarga de imprimir los valores del arreglo
 int CapturaSegura(const char solicitud[]); // Esta funcion captura un numero entero de forma segura
-void imprimeMenu(); // Esta fucion no recibe parametros y se encarga de imprimir un menu
+int defineSecuencia(); // Esta funcion toma los valores para la secuencia de ejecucion
 //---------------------------------------------------------------------------------
 
 
@@ -29,12 +29,6 @@ void imprimeMenu(); // Esta fucion no recibe parametros y se encarga de imprimir
 using namespace std;
 
 //DATOS DE USO GLOBAL
-#define MIN 1
-#define MAX 10
-int a[10] = {1,2,4,5,6,7,8,9,10}; // Arreglo que va a contener los valores a ordenar en el mejor caso(los valores estan ordenados)
-int b[10] = {10,9,8,7,6,5,4,3,2,1}; // Arreglo que va a contener los valores a ordenar en el peor caso(orden descendente)
-int c[10]; // Arreglo que va a contener los valores de forma aleatoria(caso promedio)
-float tiempo = 0.0; // Esta variable es para medir el timepo
 
 //---------------------------------------------------------------------------------
 float mergeSort(int [], float){
@@ -115,10 +109,28 @@ int CapturaSegura(const char solicitud[]){
 
        return n;
      }
- }//Llave de cierre en la funcion CapturaEntero
+ }//Llave de cierre en la funcion CapturaSegura
  //---------------------------------------------------------------------------------
-void imprimeMenu(){
-  cout << "Menu\n" << endl;
+int defineSecuencia(int, int, int){
+  int nTAM, tipo_arreglo, tipo_algoritmo,
+
+  cout << "Seleccione los valores para la secuencia de ejecucion\n" << endl;
+  cout << "Valores permitidos para n -> 10, 20, 30, 40, 50, 60, 70, 80, 90, 100" << endl;
+  nTAM = CapturaSegura("Ingrese el valor de n: ");
+
+  cout << "El orden del arreglo: " << endl;
+  cout << "Ordenado [1]" << endl;
+  cout << "Aleatorio [2]" << endl;
+  cout << "Desodenado(invertido)" << endl;
+  tipo_arreglo = CapturaSegura("Seleccione el orden del arreglo");
+
+  cout << "Seleccione el algoritmo de ordenamiento: "
+  cout << "MERGESORT [1]" << endl;
+  cout << "INSERTONSORT [2]" << endl;
+  cout << "SELECTIONSORT [3]" << endl;
+  tipo_algoritmo = CapturaSegura("Seleccione una algoritmo de ordenamiento");
+
+  return nTAM, tipo_arreglo, tipo_algoritmo;
 
 
 }// Llave de cierre en la funcion imprimeMenu

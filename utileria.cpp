@@ -2,7 +2,7 @@
   Nombre: utileria.cpp
   Fecha: Marzo del 2022
   Autor: Daniel Antonio Qui
-  Descripcion: Este archivo contiene la implementacion de utileria.h 
+  Descripcion: Este archivo contiene la implementacion de utileria.h
 */
 
 #include "utileria.h"
@@ -15,8 +15,42 @@ void run(); // Esta funcion se encarga de ejecutar todo el codigo
 
 void run(){
 
+  int nTAM, tipo_arreglo, tipo_algoritmo;
+  int arreglo[nTAM];
+  defineSecuencia(n, tipo_arreglo, tipo_algoritmo);
+
   srand(time(0));
   generaArregloAleatorio(c);
+
+
+
+  switch (tipo_arreglo) {
+    case 1:
+    generaArregloOrdenado(int arreglo[]);
+    break;
+
+    case 2:
+    generaArregloAleatorio(int arreglo[]);
+    break;
+
+    case 3:
+    gemeraArregloDesordenado(int arreglo[]);
+    break;
+  }
+
+  switch (tipo_algoritmo) {
+    case 1:
+    mergeSort(int arreglo[]);
+    break
+
+    case 2:
+    insertionSort(int arreglo[]);
+    break;
+
+    case 3:
+    selectionSort(int arreglo[]);
+    break;
+  }
 
   //MERGESORT
   cout << "Mergesort\n" << endl;
