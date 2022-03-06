@@ -7,7 +7,10 @@
 
 #include "utileria.h"
 
+//---------------------------------------------------------------------------------
+//BLOQUE PARA DECLARAR FUNCIONES
 void run(); // Esta funcion se encarga de ejecutar todo el codigo
+//---------------------------------------------------------------------------------
 
 
 void run(){
