@@ -29,9 +29,6 @@ int defineSecuencia(); // Esta funcion toma los valores para la secuencia de eje
 #include <ctime>
 
 using namespace std;
-
-//DATOS DE USO GLOBAL
-
 //---------------------------------------------------------------------------------
 float mergeSort(int [], float){
 
@@ -115,17 +112,23 @@ cout << "Arreglo generado con exito." << endl;
 
 }// Llave de cierre en la funcion generaArregloAleatorio
 //---------------------------------------------------------------------------------
-void generaArregloOrdenado(){
+void generaArregloOrdenado(int []){
 
 cout << "\nGenerando arreglo de forma ordenada, espere un momento...\n" << endl;
 
+for (size_t i = 0; i < count; i++) {
+  /* code */
+}
 cout << "Arreglo generado con exito" << endl;
 }// Llave de cierre en la funcion generaArregloOrdenado
 //---------------------------------------------------------------------------------
-void generaArregloDesordenado(){
+void generaArregloDesordenado(int []){
 
 cout << "\nGenerando arreglo de forma desordenada, espere un momento...\n" << endl;
 
+for (size_t i = 0; i < count; i++) {
+  
+}
 
 cout << "Arreglo generado con exito" << endl;
 }// Llave de cierre en la funcion generaArregloDesordenado
